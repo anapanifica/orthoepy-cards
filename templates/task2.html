@@ -1,0 +1,1546 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Карточки по орфоэпии</title>
+
+    <link href="../static/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/jumbotron-narrow.css" rel="stylesheet">
+
+	<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/53ED2383-8A85-C445-BC43-D8312919413A/main.js" charset="UTF-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  </head>
+  <body>
+  <form method="GET">
+
+  <div ng-app>
+	
+	<div class="container">
+		
+	  <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/">Главная</a></li>
+          <li><a href="/about">О проекте</a></li>
+          <li><a href="/contacts">Контакты</a></li>
+        </ul>
+        <h3 class="text-muted">Карточки по орфоэпии - 2</h3>
+      </div>
+	  
+			
+      <div class="jumbotron">
+      <div ng-switch="number" ng-init= {{ number_of_task }}>
+
+	  <div ng-switch-default>
+	  <div ng-app="">
+		<div ng-hide="isShow">
+			<br/><br/><br/><br/>
+            <p>Подождите секундочку</p>
+			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		</div>
+	  </div>				
+	  </div>
+
+	  <div ng-switch-when="1">
+	  <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 1</h3>
+            <p>ЗНАЧИМЫЙ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+            <h3>Задание 1</h3>
+            <p><b>знАчимый</b></p>
+              <hr style="border: 2px solid green;" align=center width=60%>
+            </p>
+	        <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	        <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+		</div>
+
+        <div ng-switch-when="2">
+        <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 2</h3>
+			<p>ОПТОВЫЙ</p>
+		
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 2</h3>
+			<p><b>оптОвый</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	        <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	        <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+
+        <div ng-switch-when="3">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 3</h3>
+			<p>КРАСИВЕЕ</p>
+		
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 3</h3>
+			<p><b>красИвее</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+
+        <div ng-switch-when="4">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 4</h3>
+			<p>ПРОЗОРЛИВА</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 4</h3>
+			<p><b>прозорлИва</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	        <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	        <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+
+		<div ng-switch-when="5">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 5</h3>
+			<p>КРАСИВЕЙШИЙ</p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 5</h3>
+			<p><b>красИвейший</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+
+		<div ng-switch-when="6">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 6</h3><br />
+			<p>КУХОННЫЙ</p>
+			
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 6</h3><br />
+			<p><b>кУхонный</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			<br />
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="7">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 7</h3>
+			<p>ПРОЖОРЛИВА</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 7</h3>
+			<p><b>прожОрлива</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
+		<div ng-switch-when="8">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 8</h3>
+			<p>ЛОВКА</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 8</h3>
+			<p><b>ловкА</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
+		<div ng-switch-when="9">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 9</h3>
+			<p>СЛИВОВЫЙ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 9</h3>
+			<p><b>слИвовый</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="10">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 10</h3>
+			<p>БРАЛА</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 10</h3>
+			<p><b>бралА</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="11">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 11</h3>
+			<p>ОБНЯЛАСЬ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 11</h3>
+			<p><b>обнялАсь</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="12">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 12</h3>
+			<p>БРАЛАСЬ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 12</h3>
+			<p><b>бралАсь</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="13">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 13</h3>
+			<p>ОБОГНАЛА</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 13</h3>
+			<p><b>обогналА</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="14">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 14</h3>
+			<p>ВЗЯЛА</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 14</h3>
+			<p><b>взялА</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="15">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 15</h3>
+			<p>ОБОДРАЛА</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 15</h3>
+			<p><b>ободралА</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="16">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 16</h3>
+			<p>ВЗЯЛАСЬ</p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 16</h3>
+			<p><b>взялАсь</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="17">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 17</h3>
+			<p>ОБОДРИТЬ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 17</h3>
+			<p><b>ободрИть</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p><p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="18">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 18</h3>
+			<p>ВЛИЛАСЬ</p>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 18</h3>
+			<p><b>влилАсь</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="19">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 19</h3>
+			<p>ОБОДРИТЬСЯ</p>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 19</h3>
+			<p><b>ободрИться</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="20">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 20</h3>
+			<p>ОБОДРИШЬСЯ</p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 20</h3>
+			<p><b>ободрИшься</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="21">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 21</h3>
+			<p>ВОРВАЛАСЬ</p>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 21</h3>
+			<p><b>ворвалАсь</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+        <div ng-switch-when="22">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 22</h3>
+			<p>ОБОСТРИТЬ</p>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 22</h3>
+			<p><b>обострИть</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
+		<div ng-switch-when="23">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 23</h3>
+			<p>ВОСПРИНЯТЬ</p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 23</h3>
+			<p><b>воспринЯть</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
+		<div ng-switch-when="24">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 24</h3>
+			<p>ВОСПРИНЯЛА</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 24</h3>
+			<p><b>воспринялА</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
+		<div ng-switch-when="25">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 25</h3>
+			<p>ОДОЛЖИТЬ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 25</h3>
+			<p><b>одолжИть</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		<div ng-switch-when="26">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 26</h3>
+			<p>ОДОЛЖИТ</p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 26</h3>
+			<p><b>одолжИт</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="27">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 27</h3>
+			<p>ВОССОЗДАЛА</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 27</h3>
+			<p><b>воссоздалА</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p><p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="28">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 28</h3>
+			<p><b>ОЗЛОБИТЬ</b></p>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 28</h3>
+			<p><b>воссоздалА</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="29">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 29</h3>
+			<p>ОЗЛОБИТЬ</p>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 29</h3>
+			<p><b>озлОбить</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="30">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 30</h3>
+			<p>ВРУЧИТЬ</p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 30</h3>
+			<p><b>вручИть</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+
+		<div ng-switch-when="31">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 31</h3>
+			<p>ВРУЧИТ</p>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 31</h3>
+			<p><b>вручИт</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+        <div ng-switch-when="32">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 32</h3>
+			<p>ОКЛЕИТЬ</p>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 32</h3>
+			<p><b>оклЕить</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
+		<div ng-switch-when="33">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 33</h3>
+			<p>ГНАЛА</p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 33</h3>
+			<p><b>гналА</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
+		<div ng-switch-when="34">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 34</h3>
+			<p>ОКРУЖИТ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 34</h3>
+			<p><b>окружИт</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
+		<div ng-switch-when="35">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 35</h3>
+			<p>ГНАЛАСЬ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 35</h3>
+			<p><b>гналАсь</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		<div ng-switch-when="36">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 36</h3>
+			<p>ОПЛОМБИРОВАТЬ</p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 36</h3>
+			<p><b>опломбировАть</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="37">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 37</h3>
+			<p>ДОБРАЛА</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 37</h3>
+			<p><b>добралА</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p><p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="38">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 38</h3>
+			<p>ФОРМИРОВАТЬ</p>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 38</h3>
+			<p><b>формировАть</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="39">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 39</h3>
+			<p>НОРМИРОВАТЬ</p>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 39</h3>
+			<p><b>нормировАть</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="40">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 40</h3>
+			<p>СОРТИРОВАТЬ</p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 40</h3>
+			<p><b>сортировАть</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+
+		<div ng-switch-when="41">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 41</h3>
+			<p>ДОБРАЛАСЬ</p>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 41</h3>
+			<p><b>добралАсь</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+        <div ng-switch-when="42">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 42</h3>
+			<p>ПРЕМИРОВАТЬ</p>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 42</h3>
+			<p><b>премировАть</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
+		<div ng-switch-when="43">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 43</h3>
+			<p>ДОЖДАЛАСЬ</p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 43</h3>
+			<p><b>дождалАсь</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
+		<div ng-switch-when="44">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 44</h3>
+			<p>ОПОШЛИТЬ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 44</h3>
+			<p><b>опОшлить</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
+		<div ng-switch-when="45">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 45</h3>
+			<p>ДОЗВОНИТСЯ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 45</h3>
+			<p><b>дозвонИтся</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		<div ng-switch-when="46">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 46</h3>
+			<p>ОСВЕДОМИТЬСЯ</p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 46</h3>
+			<p><b>освЕдомиться</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="47">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 47</h3>
+			<p>ДОЗВОНИТЬСЯ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 47</h3>
+			<p><b>дозвонИться</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p><p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="48">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 48</h3>
+			<p>ОСВЕДОМИШЬСЯ</p>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 48</h3>
+			<p><b>освЕдомишься</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="49">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 49</h3>
+			<p>ДОЗВОНЯТСЯ</p>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 49</h3>
+			<p><b>дозвонЯтся</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="50">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 50</h3>
+			<p>ОТБЫЛА</p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 50</h3>
+			<p><b>отбылА</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+
+
+	  <div ng-switch-when="51">
+	  <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 51</h3>
+            <p>ЖДАЛА</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+            <h3>Задание 51</h3>
+            <p><b>ждалА</b></p>
+              <hr style="border: 2px solid green;" align=center width=60%>
+            </p>
+	        <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	        <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+		</div>
+
+        <div ng-switch-when="52">
+        <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 52</h3>
+			<p>ОТКУПОРИТЬ</p>
+		
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 52</h3>
+			<p><b>откУпорить</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	        <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	        <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+
+        <div ng-switch-when="53">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 53</h3>
+			<p>ОТКУПОРИЛ</p>
+		
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 53</h3>
+			<p><b>откУпорил</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+
+        <div ng-switch-when="54">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 54</h3>
+			<p>ЖИЛОСЬ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 54</h3>
+			<p><b>жилОсь</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	        <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	        <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+
+		<div ng-switch-when="55">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 55</h3>
+			<p>ОТОЗВАЛА</p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 55</h3>
+			<p><b>отозвалА</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+
+		<div ng-switch-when="56">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 56</h3><br />
+			<p>ЗАКУПОРИТЬ</p>
+			
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 56</h3><br />
+			<p><b>закУпорить</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			<br />
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="57">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 57</h3>
+			<p>ОТОЗВАЛАСЬ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 57</h3>
+			<p><b>отозвалАсь</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
+		<div ng-switch-when="58">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 58</h3>
+			<p>ЗАНЯТЬ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 58</h3>
+			<p><b>занЯть</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
+		<div ng-switch-when="59">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 59</h3>
+			<p>ЗАНЯЛ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 59</h3>
+			<p><b>зАнял</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="60">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 60</h3>
+			<p>ЗАНЯЛА</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 60</h3>
+			<p><b>занялА</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="61">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 61</h3>
+			<p>ПЕРЕЗВОНИТ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 11</h3>
+			<p><b>перезвонИт</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="62">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 62</h3>
+			<p>ЗАНЯЛО</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 62</h3>
+			<p><b>зАняло</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="63">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 63</h3>
+			<p>ЗАНЯЛИ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 63</h3>
+			<p><b>зАняли</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="64">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 64</h3>
+			<p>ПЕРЕЛИЛА</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 64</h3>
+			<p><b>перелилА</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="65">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 65</h3>
+			<p>ЗАПЕРЛА</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 65</h3>
+			<p><b>заперлА</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="66">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 66</h3>
+			<p>ПЛОДОНОСИТЬ</p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 66</h3>
+			<p><b>плодоносИть</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="67">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 67</h3>
+			<p>ЗАПЕРЛАСЬ (НА КЛЮЧ)</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 67</h3>
+			<p><b>заперлАсь (на ключ)</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p><p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="68">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 68</h3>
+			<p>ПОВТОРИТ</p>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 68</h3>
+			<p><b>повторИт</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="69">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 69</h3>
+			<p>ПОЗВАЛА</p>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 69</h3>
+			<p><b>позвалА</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="70">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 70</h3>
+			<p>ЗВАЛА</p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 70</h3>
+			<p><b>звалА</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+		<div ng-switch-when="71">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 71</h3>
+			<p>ПОЗВОНИШЬ</p>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 71</h3>
+			<p><b>позвонИшь</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+        <div ng-switch-when="72">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 72</h3>
+			<p>ЗВОНИТ</p>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 72</h3>
+			<p><b>звонИт</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
+		<div ng-switch-when="73">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 73</h3>
+			<p>ПОЛОЖИТЬ</p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 73</h3>
+			<p><b>положИть</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
+		<div ng-switch-when="74">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 74</h3>
+			<p>ИСЧЕРПАТЬ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 74</h3>
+			<p><b>исчЕрпать</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
+		<div ng-switch-when="75">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<h3>Задание 75</h3>
+			<p>ПОНЯЛ</p>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<h3>Задание 75</h3>
+			<p><b>пОнял</b></p>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+	  </div>
+	  </div>
+
+	  
+
+
+	</div>
+  </div>
+  </form>
+
+</body>
+</html>
