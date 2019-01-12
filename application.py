@@ -3,7 +3,7 @@ from flask import url_for, render_template, request, redirect, session
 
 app = Flask(__name__)
 
-#app.config['SECRET_KEY'] = '\xcd\xf0\\\x03\xd2v\x1cS\xe5F\xf5\x99qh\xe8\xfa\x9fs\xdaCsE\xf9\xaf'
+app.config['SECRET_KEY'] = '\x81u0\x83\xa9|\xea\xed\xbey\xa0\xe8\xed\x05Mm\xf9\x1e\xe9V\x85p\xfa\xa8'
 
 
 @app.route('/')
