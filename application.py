@@ -9,7 +9,7 @@ app.config['SECRET_KEY'] = '\x81u0\x83\xa9|\xea\xed\xbey\xa0\xe8\xed\x05Mm\xf9\x
 @app.route('/')
 def index():
     session.pop('numbers', None)
-    session['numbers'] = [i for i in range(1,76)]
+    session['numbers'] = [i for i in range(1,66)]
     return render_template('index.html')
 
 @app.route('/about')
@@ -34,7 +34,7 @@ def task1 ():
             session['numbers'].remove(session['numbers'][0])
             print (session['numbers'])
             if session['numbers'] == []:
-                session['numbers'] = [i for i in range(1,76)]
+                session['numbers'] = [i for i in range(1,66)]
                 return render_template('final.html')
             session['remember'] = session['numbers']
             return render_template('task1.html', number_of_task = 'number=' + str(session['numbers'][0]))
@@ -42,17 +42,17 @@ def task1 ():
             session['numbers'].remove(session['numbers'][0])
             print (session['numbers'])
             if session['numbers'] == []:
-                session['numbers'] = [i for i in range(1,76)]
+                session['numbers'] = [i for i in range(1,66)]
                 return render_template('final.html')
             session['remember'] = session['numbers']
             return render_template('task1.html', number_of_task = 'number=' + str(session['numbers'][0]))
     else:
         print ('not ok')
         session.pop('numbers', None)
-        session['numbers'] = [i for i in range(1,76)]
+        session['numbers'] = [i for i in range(1,66)]
 
-    session['numbers'] = [i for i in range(1,76)]
-    session['remember'] = [i for i in range(1,76)]
+    session['numbers'] = [i for i in range(1,66)]
+    session['remember'] = [i for i in range(1,66)]
     return render_template('task1.html', number_of_task = 'number=1')
 
 @app.route('/task2')
@@ -67,7 +67,7 @@ def task2 ():
             session['numbers'].remove(session['numbers'][0])
             print (session['numbers'])
             if session['numbers'] == []:
-                session['numbers'] = [i for i in range(1,76)]
+                session['numbers'] = [i for i in range(1,66)]
                 return render_template('final.html')
             session['remember'] = session['numbers']
             return render_template('task2.html', number_of_task = 'number=' + str(session['numbers'][0]))
@@ -75,17 +75,17 @@ def task2 ():
             session['numbers'].remove(session['numbers'][0])
             print (session['numbers'])
             if session['numbers'] == []:
-                session['numbers'] = [i for i in range(1,76)]
+                session['numbers'] = [i for i in range(1,66)]
                 return render_template('final.html')
             session['remember'] = session['numbers']
             return render_template('task2.html', number_of_task = 'number=' + str(session['numbers'][0]))
     else:
         print ('not ok')
         session.pop('numbers', None)
-        session['numbers'] = [i for i in range(1,76)]
+        session['numbers'] = [i for i in range(1,66)]
 
-    session['numbers'] = [i for i in range(1,76)]
-    session['remember'] = [i for i in range(1,76)]
+    session['numbers'] = [i for i in range(1,66)]
+    session['remember'] = [i for i in range(1,66)]
     return render_template('task2.html', number_of_task = 'number=1')
 
 @app.route('/task3')
@@ -100,7 +100,7 @@ def task3 ():
             session['numbers'].remove(session['numbers'][0])
             print (session['numbers'])
             if session['numbers'] == []:
-                session['numbers'] = [i for i in range(1,76)]
+                session['numbers'] = [i for i in range(1,66)]
                 return render_template('final.html')
             session['remember'] = session['numbers']
             return render_template('task3.html', number_of_task = 'number=' + str(session['numbers'][0]))
@@ -108,17 +108,17 @@ def task3 ():
             session['numbers'].remove(session['numbers'][0])
             print (session['numbers'])
             if session['numbers'] == []:
-                session['numbers'] = [i for i in range(1,76)]
+                session['numbers'] = [i for i in range(1,66)]
                 return render_template('final.html')
             session['remember'] = session['numbers']
             return render_template('task3.html', number_of_task = 'number=' + str(session['numbers'][0]))
     else:
         print ('not ok')
         session.pop('numbers', None)
-        session['numbers'] = [i for i in range(1,76)]
+        session['numbers'] = [i for i in range(1,66)]
 
-    session['numbers'] = [i for i in range(1,76)]
-    session['remember'] = [i for i in range(1,76)]
+    session['numbers'] = [i for i in range(1,66)]
+    session['remember'] = [i for i in range(1,66)]
     return render_template('task3.html', number_of_task = 'number=1')
 
 @app.route('/task4')
@@ -133,7 +133,7 @@ def task4 ():
             session['numbers'].remove(session['numbers'][0])
             print (session['numbers'])
             if session['numbers'] == []:
-                session['numbers'] = [i for i in range(1,76)]
+                session['numbers'] = [i for i in range(1,66)]
                 return render_template('final.html')
             session['remember'] = session['numbers']
             return render_template('task4.html', number_of_task = 'number=' + str(session['numbers'][0]))
@@ -141,17 +141,17 @@ def task4 ():
             session['numbers'].remove(session['numbers'][0])
             print (session['numbers'])
             if session['numbers'] == []:
-                session['numbers'] = [i for i in range(1,76)]
+                session['numbers'] = [i for i in range(1,66)]
                 return render_template('final.html')
             session['remember'] = session['numbers']
             return render_template('task4.html', number_of_task = 'number=' + str(session['numbers'][0]))
     else:
         print ('not ok')
         session.pop('numbers', None)
-        session['numbers'] = [i for i in range(1,76)]
+        session['numbers'] = [i for i in range(1,66)]
 
-    session['numbers'] = [i for i in range(1,76)]
-    session['remember'] = [i for i in range(1,76)]
+    session['numbers'] = [i for i in range(1,66)]
+    session['remember'] = [i for i in range(1,66)]
     return render_template('task4.html', number_of_task = 'number=1')
 
 ##if __name__ == '__main__':
