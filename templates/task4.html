@@ -40,60 +40,56 @@
 	  </div>				
 	  </div>
 
+	  <div ng-switch-when="1">
+	  <div ng-app="">
+		<div ng-hide="isShow">
+			<p>Карточка 1</p>
+            <h1>НАЖИВШИЙ </h1>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+            <p>Карточка 1</p>
+            <h1><b>нажИвший</b></h1>
+              <hr style="border: 2px solid green;" align=center width=60%>
+            <p></p>
+	        <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	        <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+		</div>
 
-<div ng-switch-when="1">
-	    <div ng-app="">
+        <div ng-switch-when="2">
+        <div ng-app="">
 		<div ng-hide="isShow">
-			<p>Карточка 1</p><br />
-			<h1>ЗАКУПОРИТЬ</h1>
-			
-			
-			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
-		</div>
-		<div ng-show="isShow">
-			<p>Карточка 1</p><br />
-			<h1><b>закУпорить</b></h1>
-			<hr style="border: 2px solid green;" align=center width=60%>
-			<p></p>
-			<br />
-	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
-	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
-		</div>
-	    </div>		
-        </div>
+			<p>Карточка 2</p>
+			<h1>ПРИРУЧЕННЫЙ</h1>
 		
-		<div ng-switch-when="2">
-	    <div ng-app="">
-		<div ng-hide="isShow">
-			<p>Карточка 2</p>
-			<h1>ОТОЗВАЛАСЬ</h1>
-			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 2</p>
-			<h1><b>отозвалАсь</b></h1>
+			<h1><b>приручЁнный</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
-			
-	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
-	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+	        <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	        <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
 		</div>
 	    </div>
         </div>
-		
-		<div ng-switch-when="2">
+
+        <div ng-switch-when="3">
 	    <div ng-app="">
 		<div ng-hide="isShow">
-			<p>Карточка 24</p>
-			<h1>ЗАНЯТЬ</h1>
-			
+			<p>Карточка 3</p>
+			<h1>НАЖИТЫЙ</h1>
+		
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
-			<p>Карточка 24</p>
-			<h1><b>занЯть</b></h1>
+			<p>Карточка 3</p>
+			<h1><b>нАжитый</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -102,38 +98,37 @@
 		</div>
 	    </div>
         </div>
-		
-		<div ng-switch-when="4">
+
+        <div ng-switch-when="4">
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 4</p>
-			<h1>ЗАНЯЛ</h1>
+			<h1>НАЖИТА</h1>
 			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 4</p>
-			<h1><b>зАнял</b></h1>
+			<h1><b>нажитА</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
-	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
-	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+	        <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	        <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
 		</div>
 	    </div>		
         </div>
-		
+
 		<div ng-switch-when="5">
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 5</p>
-			<h1>ЗАНЯЛА</h1>
-			
+			<h1>ПРОЖИВШИЙ</h1>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 5</p>
-			<h1><b>занялА</b></h1>
+			<h1><b>прожИвший</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -142,21 +137,22 @@
 		</div>
 	    </div>		
         </div>
-		
+
 		<div ng-switch-when="6">
 	    <div ng-app="">
 		<div ng-hide="isShow">
-			<p>Карточка 6</p>
-			<h1>ПЕРЕЗВОНИТ</h1>
+			<p>Карточка 6</p><br />
+			<h1>НАЛИВШИЙ</h1>
+			
 			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
-			<p>Карточка 6</p>
-			<h1><b>перезвонИт</b></h1>
+			<p>Карточка 6</p><br />
+			<h1><b>налИвший</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
-			
+			<br />
 	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
 	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
 		</div>
@@ -167,13 +163,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 7</p>
-			<h1>ЗАНЯЛО</h1>
+			<h1>НАЛИТА</h1>
 			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 7</p>
-			<h1><b>зАняло</b></h1>
+			<h1><b>налитА</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -181,40 +177,40 @@
 	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
 	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
 		</div>
-	    </div>		
+	    </div>
         </div>
 		
 		<div ng-switch-when="8">
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 8</p>
-			<h1>ЗАНЯЛИ</h1>
+			<h1>СНЯТА</h1>
 			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 8</p>
-			<h1><b>зАняли</b></h1>
+			<h1><b>снятА</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
 	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
 	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
 		</div>
-	    </div>		
+	    </div>
         </div>
 		
 		<div ng-switch-when="9">
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 9</p>
-			<h1>ПЕРЕЛИЛА</h1>
+			<h1>НАНЯВШИЙСЯ</h1>
 			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 9</p>
-			<h1><b>перелилА</b></h1>
+			<h1><b>нанЯвшийся</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -228,13 +224,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 10</p>
-			<h1>ЗАПЕРЛА</h1>
+			<h1>СОГНУТЫЙ</h1>
 			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 10</p>
-			<h1><b>заперлА</b></h1>
+			<h1><b>сОгнутый</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -248,12 +244,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 11</p>
-			<h1>ПЛОДОНОСИТЬ</h1>
+			<h1>НАЧАВШИЙ </h1>
+			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 11</p>
-			<h1><b>плодоносИть</b></h1>
+			<h1><b>начАвший</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -267,15 +264,16 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 12</p>
-			<h1>ЗАПЕРЛАСЬ (НА КЛЮЧ)</h1>
+			<h1>БАЛУЯСЬ</h1>
 			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 12</p>
-			<h1><b>заперлАсь (на ключ)</b></h1>
+			<h1><b>балУясь</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
+			
 			
 	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
 	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
@@ -287,13 +285,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 13</p>
-			<h1>ПОВТОРИТ</h1>
-			<p></p>
+			<h1>ПОДНЯВ</h1>
+			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 13</p>
-			<h1><b>повторИт</b></h1>
+			<h1><b>поднЯв</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -303,17 +301,17 @@
 	    </div>		
         </div>
 		
-		<div ng-switch-when=14">
+		<div ng-switch-when="14">
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 14</p>
-			<h1>ПОЗВАЛА</h1>
-			<p></p>
+			<h1>ЗАКУПОРИВ</h1>
+			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
-			<p>Карточка14</p>
-			<h1><b>позвалА</b></h1>
+			<p>Карточка 14</p>
+			<h1><b>закУпорив</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -327,12 +325,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 15</p>
-			<h1>ЗВАЛА</h1>
+			<h1>ПОНЯВ</h1>
+			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 15</p>
-			<h1><b>звалА</b></h1>
+			<h1><b>понЯв</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -346,13 +345,12 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 16</p>
-			<h1>ПОЗВОНИШЬ</h1>
-			<p></p>
+			<h1>НАЧАВ</h1>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 16</p>
-			<h1><b>позвонИшь</b></h1>
+			<h1><b>начАв</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -362,199 +360,197 @@
 	    </div>		
         </div>
 		
-        <div ng-switch-when="17">
+		<div ng-switch-when="17">
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 17</p>
-			<h1>ЗВОНИТ</h1>
-			<p></p>
+			<h1>ПРИБЫВ<h1>
+			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 17</p>
-			<h1><b>звонИт</b></h1>
+			<h1><b>прибЫв</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
 	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
 	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
 		</div>
-	    </div>
+	    </div>		
         </div>
 		
 		<div ng-switch-when="18">
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 18</p>
-			<h1>ПОЛОЖИТЬ</h1>
+			<h1>НАЧАВШИСЬ</h1>
+			<p></p>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 18</p>
-			<h1><b>положИть</b></h1>
+			<h1><b>начАвшись</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
 	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
 	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
 		</div>
-	    </div>
+	    </div>		
         </div>
 		
 		<div ng-switch-when="19">
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 19</p>
-			<h1>ИСЧЕРПАТЬ</h1>
-			
+			<h1>СОЗДАВ</h1>
+			<p></p>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 19</p>
-			<h1><b>исчЕрпать</b></h1>
+			<h1><b>создАв </b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
 	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
 	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
 		</div>
-	    </div>
+	    </div>		
         </div>
 		
 		<div ng-switch-when="20">
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 20</p>
-			<h1>ПОНЯЛ</h1>
-			
+			<h1>ВОВРЕМЯ</h1>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 20</p>
-			<h1><b>пОнял</b></h1>
+			<h1><b>вОвремя</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
 	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
 	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
-		</div>
-	    </div>
-        </div>
-
-
-	  <div ng-switch-when="21">
-	  <div ng-app="">
-		<div ng-hide="isShow">
-			<p>Карточка 21</p>
-            <h1>КЛАЛА</h1>
-			
-			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
-		</div>
-		<div ng-show="isShow">
-            <p>Карточка 21</p>
-            <h1><b>клАла</b></h1>
-              <hr style="border: 2px solid green;" align=center width=60%>
-           <p></p>
-	        <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
-	        <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
-		</div>
-	    </div>
-		</div>
-
-        <div ng-switch-when="22">
-        <div ng-app="">
-		<div ng-hide="isShow">
-			<p>Карточка 22</p>
-			<h1>ПОСЛАЛА</h1>
-		
-			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
-		</div>
-		<div ng-show="isShow">
-			<p>Карточка 22</p>
-			<h1><b>послАла</b></h1>
-			<hr style="border: 2px solid green;" align=center width=60%>
-			<p></p>
-			
-	        <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
-	        <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
-		</div>
-	    </div>
-        </div>
-
-        <div ng-switch-when="23">
-	    <div ng-app="">
-		<div ng-hide="isShow">
-			<p>Карточка 23</p>
-			<h1>ПРИБЫЛ</h1>
-		
-			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
-		</div>
-		<div ng-show="isShow">
-			<p>Карточка 23</p>
-			<h1><b>прИбыл</b></h1>
-			<hr style="border: 2px solid green;" align=center width=60%>
-			<p></p>
-			
-	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
-	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
-		</div>
-	    </div>
-        </div>
-
-        <div ng-switch-when="24">
-	    <div ng-app="">
-		<div ng-hide="isShow">
-			<p>Карточка 24</p>
-			<h1>ПРИБЫЛА</h1>
-			
-			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
-		</div>
-		<div ng-show="isShow">
-			<p>Карточка 24</p>
-			<h1><b>прибылА</b></h1>
-			<hr style="border: 2px solid green;" align=center width=60%>
-			<p></p>
-			
-	        <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
-	        <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
 		</div>
 	    </div>		
         </div>
-
+		
+		<div ng-switch-when="21">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<p>Карточка 21</p>
+			<h1>ЗАГОДЯ</h1>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<p>Карточка 21</p>
+			<h1><b>зАгодя</b></h1>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+		
+        <div ng-switch-when="22">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<p>Карточка 22</p>
+			<h1>ДОБЕЛА</h1>
+			<p></p>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<p>Карточка 22</p>
+			<h1><b>добелА</b></h1>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
+		<div ng-switch-when="23">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<p>Карточка 23</p>
+			<h1>ЗАСВЕТЛО</h1>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<p>Карточка 23</p>
+			<h1><b>зАсветло</b></h1>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
+		<div ng-switch-when="24">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<p>Карточка 24</p>
+			<h1>ДОВЕРХУ</h1>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<p>Карточка 24</p>
+			<h1><b>дОверху</b></h1>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+		
 		<div ng-switch-when="25">
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 25</p>
-			<h1>ПРИБЫЛО</h1>
+			<h1>ЗАТЕМНО</h1>
+			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 25</p>
-			<h1><b>прИбыло</b></h1>
+			<h1><b>зАтемно</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
 	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
 	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
 		</div>
-	    </div>		
+	    </div>
         </div>
 
 		<div ng-switch-when="26">
 	    <div ng-app="">
 		<div ng-hide="isShow">
-			<p>Карточка 26</p><br />
-			<h1>КРАЛАСЬ</h1>
-			
-			
+			<p>Карточка 26</p>
+			<h1>ДОНЕЛЬЗЯ</h1>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
-			<p>Карточка 26</p><br />
-			<h1><b>крАлась</b></h1>
+			<p>Карточка 26</p>
+			<h1><b>донЕльзя</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
-			<br />
+			
 	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
 	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
 		</div>
@@ -565,54 +561,53 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 27</p>
-			<h1>ПРИНЯТЬ</h1>
+			<h1>КРАСИВЕЕ</h1>
 			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 27</p>
-			<h1><b>принЯть</b></h1>
+			<h1><b>красИвее</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
-			
 			
 	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
 	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
 		</div>
-	    </div>
+	    </div>		
         </div>
 		
 		<div ng-switch-when="28">
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 28</p>
-			<h1>ПРИНЯЛ</h1>
-			
+			<h1>ДОНИЗУ</h1>
+			<p></p>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 28</p>
-			<h1><b>прИнял</b></h1>
+			<h1><b>дОнизу</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
 	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
 	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
 		</div>
-	    </div>
+	    </div>		
         </div>
 		
 		<div ng-switch-when="29">
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 29</p>
-			<h1>ПРИНЯЛИ</h1>
-			
+			<h1>НАДОЛГО</h1>
+			<p></p>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 29</p>
-			<h1><b>прИняли</b></h1>
+			<h1><b>надОлго</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -621,18 +616,19 @@
 		</div>
 	    </div>		
         </div>
-		
+
+
 		<div ng-switch-when="30">
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 30</p>
-			<h1>ПРИНЯЛА</h1>
-			
+			<h1>НЕНАДОЛГО</h1>
+			<p></p>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 30</p>
-			<h1><b>принялА</b></h1>
+			<h1><b>ненадОлго</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -641,18 +637,18 @@
 		</div>
 	    </div>		
         </div>
-		
+
 		<div ng-switch-when="31">
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 31</p>
-			<h1>ЛГАЛА</h1>
+			<h1>ЗАПЕРТЫЙ</h1>
 			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 31</p>
-			<h1><b>лгалА</b></h1>
+			<h1><b>зАпертый</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -666,13 +662,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 32</p>
-			<h1>ПРИНУДИТЬ</h1>
+			<h1>ЗАПЕРТА</h1>
 			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 32</p>
-			<h1><b>принУдить</b></h1>
+			<h1><b>запертА</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -687,13 +683,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 33</p>
-			<h1>ЛИЛА (воду)</h1>
+			<h1>ЗАСЕЛЕННЫЙ</h1>
 			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 33</p>
-			<h1><b>лилА (воду)</b></h1>
+			<h1><b>заселЁнный</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -707,13 +703,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 34</p>
-			<h1>РВАЛА</h1>
+			<h1>ЗАСЕЛЕНА</h1>
 			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 34</p>
-			<h1><b>рвалА</b></h1>
+			<h1><b>заселенА</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -727,13 +723,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 35</p>
-			<h1>ЛИЛАСЬ</h1>
+			<h1>ОТКЛЮЧЕННЫЙ</h1>
 			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 35</p>
-			<h1><b>лилАсь</b></h1>
+			<h1><b>отключЁнный </b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -742,17 +738,17 @@
 		</div>
 	    </div>		
         </div>
-		
-		<div ng-switch-when="36">
+
+        <div ng-switch-when="36">
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 36</p>
-			<h1>СВЕРЛИШЬ</h1>
+			<h1>ИЗБАЛОВАННЫЙ</h1>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 36</p>
-			<h1><b>сверлИшь</b></h1>
+			<h1><b>избалОванный</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -766,15 +762,15 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 37</p>
-			<h1>СВЕРЛИТ<h1>
+			<h1>БАЛОВАННЫЙ</h1>
 			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 37</p>
-			<h1><b>сверлИт</b></h1>
+			<h1><b>балОванный</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
-			<p></p>
+		<p></p>
 			
 	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
 	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
@@ -786,13 +782,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 38</p>
-			<h1>НАВРАЛА</h1>
+			<h1>ПОВТОРЕННЫЙ</h1>
 			<p></p>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 38</p>
-			<h1><b>навралА</b></h1>
+			<h1><b>повторЁнный</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -806,13 +802,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 39</p>
-			<h1>СНЯЛА</h1>
+			<h1>ЦЕНТНЕР</h1>
 			<p></p>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 39</p>
-			<h1><b>снялА</b></h1>
+			<h1><b>цЕнтнер</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -826,12 +822,12 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 40</p>
-			<h1>НАДЕЛИТ</h1>
+			<h1>КОРМЯЩИЙ</h1>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 40</p>
-			<h1><b>наделИт</b></h1>
+			<h1><b>кормЯщий</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -845,13 +841,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 41</p>
-			<h1>СОЗДАЛА</h1>
+			<h1>ПОДЕЛЕННЫЙ</h1>
 			<p></p>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 41</p>
-			<h1><b>создалА</b></h1>
+			<h1><b>поделЁнный</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -865,13 +861,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 42</p>
-			<h1>НАДОРВАЛАСЬ</h1>
+			<h1>КРОВОТОЧАЩИЙ</h1>
 			<p></p>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 42</p>
-			<h1><b>надорвалАсь</b></h1>
+			<h1><b>кровоточАщий</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -885,12 +881,12 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 43</p>
-			<h1>СОРВАЛА</h1>
+			<h1>ПОНЯВШИЙ</h1>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 43</p>
-			<h1><b>сорвалА</b></h1>
+			<h1><b>понЯвший</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -904,13 +900,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 44</p>
-			<h1>НАЗВАЛАСЬ</h1>
+			<h1>МОЛЯЩИЙ</h1>
 			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 44</p>
-			<h1><b>назвалАсь</b></h1>
+			<h1><b>молЯщий</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -924,13 +920,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 45</p>
-			<h1>СОРИТ</h1>
+			<h1>ПРИНЯТЫЙ</h1>
 			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 45</p>
-			<h1><b>сорИт</b></h1>
+			<h1><b>прИнятый</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -938,17 +934,18 @@
 	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
 		</div>
 	    </div>
-        </div>
-		<div ng-switch-when="46">
+	    </div>
+
+<div ng-switch-when="46">
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 46</p>
-			<h1>НАКРЕНИТЬСЯ</h1>
+			<h1>ОБЛИЛАСЬ</h1>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 46</p>
-			<h1><b>накренИться</b></h1>
+			<h1><b>облилАсь</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -962,13 +959,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 47</p>
-			<h1>НАКРЕНИТСЯ</h1>
+			<h1>БАЛОВАННЫЙ</h1>
 			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 47</p>
-			<h1><b>накренИтся</b></h1>
+			<h1><b>балОванный</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -982,13 +979,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 48</p>
-			<h1>УБРАЛА </h1>
+			<h1>НАЧАТЫЙ</h1>
 			<p></p>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 48</p>
-			<h1><b>убралА</b></h1>
+			<h1><b>нАчатый</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -1002,13 +999,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 49</p>
-			<h1>НАЛИЛА</h1>
+			<h1>ВКЛЮЧЕННЫЙ</h1>
 			<p></p>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 49</p>
-			<h1><b>налилА</b></h1>
+			<h1><b>включЁнный</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -1022,12 +1019,12 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 50</p>
-			<h1>УБЫСТРИТЬ</h1>
+			<h1>ВКЛЮЧЕН</h1>
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 50</p>
-			<h1><b>убыстрИть</b></h1>
+			<h1><b>включЁн</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -1037,17 +1034,96 @@
 	    </div>		
         </div>
 
-		<div ng-switch-when="51">
-	    <div ng-app="">
+
+	  <div ng-switch-when="51">
+	  <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 51</p>
-			<h1>НАРВАЛА</h1>
-			<p></p>
+            <h1>НИЗВЕДЕННЫЙ</h1>
+			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
-			<p>Карточка 51</p>
-			<h1><b>нарвалА </b></h1>
+            <p>Карточка 51</p>
+            <h1><b>низведЁнный</b></h1>
+              <hr style="border: 2px solid green;" align=center width=60%>
+           <p></p>
+	        <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	        <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+		</div>
+
+        <div ng-switch-when="52">
+        <div ng-app="">
+		<div ng-hide="isShow">
+			<p>Карточка 52</p>
+			<h1>НАЧАТА</h1>
+		
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<p>Карточка 52</p>
+			<h1><b>начатА</b></h1>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	        <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	        <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+
+        <div ng-switch-when="53">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<p>Карточка 53</p>
+			<h1>ДОВЕЗЕННЫЙ</h1>
+		
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<p>Карточка 53</p>
+			<h1><b>довезЁнный</b></h1>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>
+        </div>
+
+        <div ng-switch-when="54">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<p>Карточка 54</p>
+			<h1>НИЗВЕДЕН</h1>
+			
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<p>Карточка 54</p>
+			<h1><b>низведЁн</b></h1>
+			<hr style="border: 2px solid green;" align=center width=60%>
+			<p></p>
+			
+	        <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
+	        <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
+		</div>
+	    </div>		
+        </div>
+
+		<div ng-switch-when="55">
+	    <div ng-app="">
+		<div ng-hide="isShow">
+			<p>Карточка 55</p>
+			<h1>ЗАГНУТЫЙ</h1>
+			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
+		</div>
+		<div ng-show="isShow">
+			<p>Карточка 55</p>
+			<h1><b>зАгнутый</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -1056,98 +1132,22 @@
 		</div>
 	    </div>		
         </div>
-		
-        <div ng-switch-when="52">
-	    <div ng-app="">
-		<div ng-hide="isShow">
-			<p>Карточка 52</p>
-			<h1>УГЛУБИТЬ</h1>
-			<p></p>
-			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
-		</div>
-		<div ng-show="isShow">
-			<p>Карточка 52</p>
-			<h1><b>углубИть</b></h1>
-			<hr style="border: 2px solid green;" align=center width=60%>
-			<p></p>
-			
-	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
-	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
-		</div>
-	    </div>
-        </div>
-		
-		<div ng-switch-when="53">
-	    <div ng-app="">
-		<div ng-hide="isShow">
-			<p>Карточка 53</p>
-			<h1>НАСОРИТ</h1>
-			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
-		</div>
-		<div ng-show="isShow">
-			<p>Карточка 53</p>
-			<h1><b>насорИт</b></h1>
-			<hr style="border: 2px solid green;" align=center width=60%>
-			<p></p>
-			
-	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
-	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
-		</div>
-	    </div>
-        </div>
-		
-		<div ng-switch-when="54">
-	    <div ng-app="">
-		<div ng-hide="isShow">
-			<p>Карточка 54</p>
-			<h1>УКРЕПИТ</h1>
-			
-			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
-		</div>
-		<div ng-show="isShow">
-			<p>Карточка 54</p>
-			<h1><b>укрепИт</b></h1>
-			<hr style="border: 2px solid green;" align=center width=60%>
-			<p></p>
-			
-	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
-	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
-		</div>
-	    </div>
-        </div>
-		
-		<div ng-switch-when="55">
-	    <div ng-app="">
-		<div ng-hide="isShow">
-			<p>Карточка 55</p>
-			<h1>НАЧАТЬ</h1>
-			
-			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
-		</div>
-		<div ng-show="isShow">
-			<p>Карточка 55</p>
-			<h1><b>начАть</b></h1>
-			<hr style="border: 2px solid green;" align=center width=60%>
-			<p></p>
-			
-	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
-	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
-		</div>
-	    </div>
-        </div>
+
 		<div ng-switch-when="56">
 	    <div ng-app="">
 		<div ng-hide="isShow">
-			<p>Карточка 56</p>
-			<h1>НАЧАЛ</h1>
+			<p>Карточка 56</p><br />
+			<h1>ОБОДРЕН</h1>
+			
+			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
-			<p>Карточка 56</p>
-			<h1><b>нАчал</b></h1>
+			<p>Карточка 56</p><br />
+			<h1><b>ободрЁн</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
-			
+			<br />
 	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
 	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
 		</div>
@@ -1158,53 +1158,54 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 57</p>
-			<h1>НАЧАЛА</h1>
+			<h1>ОБОДРЕНА</h1>
 			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 57</p>
-			<h1><b>началА</b></h1>
+			<h1><b>ободренА</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
-			<p><p>
+			<p></p>
+			
 			
 	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
 	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
 		</div>
-	    </div>		
+	    </div>
         </div>
 		
 		<div ng-switch-when="58">
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 58</p>
-			<h1>НАЧАЛИ</h1>
-			<p></p>
+			<h1>ЗАНЯТЫЙ</h1>
+			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 58</p>
-			<h1><b>нАчали</b></h1>
+			<h1><b>зАнятый</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
 	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
 	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
 		</div>
-	    </div>		
+	    </div>
         </div>
 		
 		<div ng-switch-when="59">
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 59</p>
-			<h1>ЧЕРПАТЬ</h1>
-			<p></p>
+			<h1>ЗАНЯТА</h1>
+			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 59</p>
-			<h1><b>чЕрпать</b></h1>
+			<h1><b>занятА</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -1218,32 +1219,13 @@
 	    <div ng-app="">
 		<div ng-hide="isShow">
 			<p>Карточка 60</p>
-			<h1>ОБЗВОНИТ</h1>
+			<h1>ОБОСТРЕННЫЙ</h1>
+			
 			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
 		</div>
 		<div ng-show="isShow">
 			<p>Карточка 60</p>
-			<h1><b>обзвонИт</b></h1>
-			<hr style="border: 2px solid green;" align=center width=60%>
-			<p></p>
-			
-	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
-	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
-		</div>
-	    </div>		
-        </div>
-
-		<div ng-switch-when="61">
-	    <div ng-app="">
-		<div ng-hide="isShow">
-			<p>Карточка 61</p>
-			<h1>ЩЕМИТ</h1>
-			<p></p>
-			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
-		</div>
-		<div ng-show="isShow">
-			<p>Карточка 61</p>
-			<h1><b>щемИт</b></h1>
+			<h1><b>обострЁнный</b></h1>
 			<hr style="border: 2px solid green;" align=center width=60%>
 			<p></p>
 			
@@ -1253,86 +1235,10 @@
 	    </div>		
         </div>
 		
-        <div ng-switch-when="62">
-	    <div ng-app="">
-		<div ng-hide="isShow">
-			<p>Карточка 62</p>
-			<h1>ЗАЩЕМИТ</h1>
-			<p></p>
-			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
-		</div>
-		<div ng-show="isShow">
-			<p>Карточка 62</p>
-			<h1><b>защемИт</b></h1>
-			<hr style="border: 2px solid green;" align=center width=60%>
-			<p></p>
-			
-	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
-	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
-		</div>
-	    </div>
-        </div>
-		
-		<div ng-switch-when="63">
-	    <div ng-app="">
-		<div ng-hide="isShow">
-			<p>Карточка 63</p>
-			<h1>ОБЛЕГЧИТЬ</h1>
-			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
-		</div>
-		<div ng-show="isShow">
-			<p>Карточка 63</p>
-			<h1><b>облегчИть</b></h1>
-			<hr style="border: 2px solid green;" align=center width=60%>
-			<p></p>
-			
-	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
-	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
-		</div>
-	    </div>
-        </div>
-		
-		<div ng-switch-when="64">
-	    <div ng-app="">
-		<div ng-hide="isShow">
-			<p>Карточка 64</p>
-			<h1>ОБЛЕГЧИТ</h1>
-			
-			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
-		</div>
-		<div ng-show="isShow">
-			<p>Карточка 64</p>
-			<h1><b>облегчИт</b></h1>
-			<hr style="border: 2px solid green;" align=center width=60%>
-			<p></p>
-			
-	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
-	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
-		</div>
-	    </div>
-        </div>
-		
-		<div ng-switch-when="65">
-	    <div ng-app="">
-		<div ng-hide="isShow">
-			<p>Карточка 65</p>
-			<h1>ЩЁЛКАТЬ</h1>
-			
-			<input class="btn btn-lg btn-success" type="button" ng-click="isShow = true" value="Проверить" />
-		</div>
-		<div ng-show="isShow">
-			<p>Карточка 65</p>
-			<h1><b>щЁлкать</b></h1>
-			<hr style="border: 2px solid green;" align=center width=60%>
-			<p></p>
-			
-	    <input type="submit" class="btn btn-lg btn-success" name="repeat" value="Повторить"> 
-	    <input type="submit" class="btn btn-lg btn-success" name="right" value="Правильно">
-		</div>
-	    </div>
-        </div>
 
 		
+
+        
 	  </div>
 	  </div>
 
